@@ -1,6 +1,6 @@
 Fn = []
 
-
+inp = int(input("Enter how many digits you would like to find the first value of n for the respective term in the Fibonacci sequence to consist of that many digits: "))
 
 def fib(n):
     if len(Fn) == 0:
@@ -16,7 +16,7 @@ def fib(n):
 
 def check():
     try:
-        if len(str(Fn[-1])) != 1000:
+        if len(str(Fn[-1])) != inp:
             return True
     except:
         return False
@@ -24,4 +24,4 @@ def check():
 while check() or len(Fn) == 0:
     fib(len(Fn))
 
-print("The first value of n in which the term contains 1000 digits is " + str(len(Fn)-1))
+print("The first value of n in which the term contains " + str(inp) +  " digits is " + str(len(Fn)-1))
