@@ -1,7 +1,7 @@
 Fn = []
 
 inp = int(input("Enter how many digits you would like to find the first value of n for the respective term in the Fibonacci sequence to consist of that many digits: "))
-
+print(0)
 def fib(n):
     if len(Fn) == 0:
         Fn.append(0)
